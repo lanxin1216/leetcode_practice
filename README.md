@@ -1,7 +1,19 @@
-# leetcode_practice_java
-力扣的刷题代码（java）
+# leetcode_practice
+力扣的刷题代码
 
 [题库 - 力扣 (LeetCode) 全球极客挚爱的技术成长平台](https://leetcode.cn/problemset/all/)
+
+**leetcode_practice_python**：
+
+- python语言
+- 编辑器使用**PyCharm 2023.2.1**
+
+**leetcode_practice_java**：
+
+- java语言
+- 编辑器使用**IntelliJ IDEA 2022.3.2**
+
+包文件：
 
 - difficulty_1为困难类型题目
 - easily_1为简单类型题目
