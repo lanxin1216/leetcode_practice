@@ -3,12 +3,7 @@
 
 [题库 - 力扣 (LeetCode) 全球极客挚爱的技术成长平台](https://leetcode.cn/problemset/all/)
 
-**leetcode_practice_python**：
-
-- python语言
-- 编辑器使用**PyCharm 2023.2.1**
-
-**leetcode_practice_java**：
+**leetcode_practice**：
 
 - java语言
 - 编辑器使用**IntelliJ IDEA 2022.3.2**
