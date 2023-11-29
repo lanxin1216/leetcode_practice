@@ -1,5 +1,6 @@
 package easily_1;
 /**
+ * time = 2023/11/29
  * 13. 罗马数字转整数
  * 罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。
  *
@@ -19,9 +20,53 @@ package easily_1;
  * C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
  * 给定一个罗马数字，将其转换成整数。
  */
-public class code_03 {
-    public int romanToInt(String s) {
+import java.util.Scanner;
 
+public class code_03 {
+    public static int romanToInt(String s) {
+        int nums = 0;
+        // 将字符串转换为数组
+        char[] arr = s.toCharArray();
+
+        //循环数组判断
+        for (int i = 0; i < arr.length; i++) {
+            int num = zhuanhuan(arr[i]);
+
+            if (i == arr.length-1) {
+                nums += num;
+            } else if (num < zhuanhuan(arr[i+1])) {
+                nums -= num;
+            } else {
+                nums += num;
+            }
+
+        }
+        return nums;
     }
 
+    public static int zhuanhuan(char num) {
+        switch(num) {
+            case 'I': return 1;
+            case 'V': return 5;
+            case 'X': return 10;
+            case 'L': return 50;
+            case 'C': return 100;
+            case 'D': return 500;
+            case 'M': return 1000;
+            default : return 0;
+        }
+    }
+
+    //测试代码
+    public static void main(String[] args) {
+        //输入罗马数字（字符串）
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.next();
+
+        // 调用函数
+        int sum = code_03.romanToInt(s);
+
+        //输出阿拉伯数字
+        System.out.println(sum);
+    }
 }
